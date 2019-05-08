@@ -5,6 +5,8 @@ text-transform:capitalize;
 font-size: 1.4rem;
 background:transparent;
 border: 0.05rem solid var(--lightBlue);
+border-color: ${props => 
+    props.cart ? "var(--mainYellow)" : "var(--lightBlue)"}};
 color: var(--lightblue);
 border-radius: 0.5rem;
 padding: 0.2rem 0.5rem;
