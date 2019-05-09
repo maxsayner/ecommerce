@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { productConsumer } from '../Context';
+import { ProductConsumer } from '../Context';
 import PropTypes from 'prop-types'
 
 export default class Product extends Component {
@@ -10,8 +10,12 @@ export default class Product extends Component {
         return (
             <ProductWrapper className="col-9 mx-auto col-md col-lg-3 my-3" >
                 <div className="card">
-                    <div className="img-container p-5"
-                        onClick={() => console.log('you clicked me on the image container')}>
+              <ProductConsumer>
+            {(value) => (<div className="img-container p-5"
+                        onClick={() => 
+                        value.handleDetail(id)
+                        }
+                        >
                         <Link to="/details">
                             <img src={img} alt="product" className="card-img-top">
                             </img>
@@ -21,7 +25,8 @@ export default class Product extends Component {
                             className="cart-btn"
                             disabled={inCart ? true : false}
                             onClick={() => {
-                                console.log('added to the cart');
+                                value.addToCart(id);
+                                value.openModal(id);
                             }}
                         >
                             {inCart ? (
@@ -33,8 +38,12 @@ export default class Product extends Component {
                                     <i className="fas fa-cart-plus" />
                                 )}
                         </button>
-                    </div>
+                    </div>)}
+                    
+
+                    </ProductConsumer>
                     {/* card footer */}
+                   
                     <div className="card-footer d-flex 
                     justify-content-between">
                     <p className="align-self-center mb-0">
@@ -101,14 +110,14 @@ const ProductWrapper = styled.div`
             color:var(--mainWhite);
             font-size: 1.4rem;
             border-radius: 0.5rem 0 0 0;
-            transform: translate(100%, 100%);
+            // transform: translate(100%, 100%);
             transition: all is linear;
         }
         .img-contaier::hover .cart-btn{
             transform: translate(0, 0);
         }
         .cart-btn:hover{
-            color:var(--mainBlue);
+            color:var(--mainGrey);
             cursor:pointer;
         }
         `;
