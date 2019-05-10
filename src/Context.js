@@ -58,7 +58,7 @@ class ProductProvider extends Component {
             }
         );
     };
-    OpenModal = id => {
+    openModal = id => {
         const product = this.getItem(id);
         this.setState(() => {
             return { modalProduct: product, modalOpen: true }
