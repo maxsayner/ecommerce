@@ -72,17 +72,17 @@ Product.propTypes = {
 }
 
 const ProductWrapper = styled.div`
-        .cart{
+        .card{
             border-color: transparent;
-            transition:all 1s linear;
+            transition: all 1s linear;
         }
         .card-footer{
             background:transparent;
             border-top: transparent;
-            transition:all 1s linear;
+            transition: all 1s linear;
         }
         &:hover{
-            .card{
+            .card {
                 border:0.04rem solid rgba(0,0,0,0.2);
                 box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2;)
             }
@@ -95,7 +95,7 @@ const ProductWrapper = styled.div`
             overflow: hidden;
         }
         .card-img-top{
-            transition: all .5s linear;
+            transition: all 1s linear;
         }
         .img-container:hover .card-img-top{
             transform:scale(1.2);
@@ -110,10 +110,10 @@ const ProductWrapper = styled.div`
             color:var(--mainWhite);
             font-size: 1.4rem;
             border-radius: 0.5rem 0 0 0;
-            // transform: translate(100%, 100%);
-            transition: all is linear;
+            transform: translate(100%, 100%);
+            transition: all 1s linear;
         }
-        .img-contaier::hover .cart-btn{
+        .img-container:hover .cart-btn {
             transform: translate(0, 0);
         }
         .cart-btn:hover{

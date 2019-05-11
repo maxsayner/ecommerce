@@ -63,8 +63,8 @@ export const storeProducts = [
     },
     {
         id: 6,
-        title: "Titos",
-        img: "Titos.png",
+        title: "",
+        img: "",
         price: 17,
         company: "Titos Vodka",
         info:
