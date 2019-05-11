@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
+import CartColumns from './components/Cart/CartColumns';
 import Default from './components/Default';
 import Modal from './components/Modal';
 import Image from 'react-image-resizer';
