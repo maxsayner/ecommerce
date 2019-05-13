@@ -1,10 +1,10 @@
 :root{
-  --mainBlue:#2a2a72;
+  --mainGrey:#555558;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
-  --mainYellow:#cecb23;
-  --mainGrey:#696969;
+  --mainBlue:#023144;
+  --lightGrey:#696969;
 
 }
 body{
@@ -17,8 +17,8 @@ body{
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
-.text-blue{
-  color: var(--mainBlue);
+.text-grey{
+  color: var(--mainGrey);
 }
 .text-bright{
   color: var(--lightBlue);

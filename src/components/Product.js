@@ -49,7 +49,7 @@ export default class Product extends Component {
                     <p className="align-self-center mb-0">
                     {title} 
                     </p>
-                    <h5 className="text-blue font-italic mb-0">
+                    <h5 className="text-grey font-italic mb-0">
                     <span className="mr-1">$</span>
                     {price}
                     </h5>
@@ -95,7 +95,7 @@ const ProductWrapper = styled.div`
             overflow: hidden;
         }
         .card-img-top{
-            transition: all 1s linear;
+            transition: all 0.5s linear;
         }
         .img-container:hover .card-img-top{
             transform:scale(1.2);
@@ -117,7 +117,7 @@ const ProductWrapper = styled.div`
             transform: translate(0, 0);
         }
         .cart-btn:hover{
-            color:var(--mainGrey);
+            color:var(--lightBlue);
             cursor:pointer;
         }
         `;
