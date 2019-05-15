@@ -3,7 +3,7 @@
 export const storeProducts = [
     {
         id: 1,
-        title: "ABSOLUT",
+        title: "cat pajamas",
         img: "",
         price: 10,
         company: "Absolut Vodka",
