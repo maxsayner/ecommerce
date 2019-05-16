@@ -5,6 +5,7 @@
   --mainDark:#232528;
   --mainBlue:#023144;
   --lightGrey:#696969;
+  --mainRed:#dc3545;
 
 }
 body{
@@ -38,5 +39,5 @@ body{
 .cart-icon{
   cursor: pointer;
   font-size:1.2rem;
-  color: var(--lightBlue);
+  color: var(--mainRed);
 }
