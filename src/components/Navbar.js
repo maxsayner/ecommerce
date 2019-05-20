@@ -9,7 +9,7 @@ export default class Navbar extends Component {
             <NavWrapper className="navbar navbar-expand-sm  navbar-dark px-sm-5" >
 
                 <Link to='/'>
-                <i className="fas fa-cocktail fa-2x"></i>
+                    <i className="fas fa-user-tie fa-2x"></i>
                 </Link>
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item ml-5">
